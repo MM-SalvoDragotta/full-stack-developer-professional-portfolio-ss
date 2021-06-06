@@ -1,9 +1,62 @@
+/* Variables */
 :root{
+
  /* CSS HEX */
---black-coffee: #3c3744ff;
---duke-blue: #090c9bff;
---iris: #3d52d5ff;
---light-steel-blue: #b4c5e4ff;
---ivory: #fbfff1ff;   
+--dark-primary-color : #303F9F; /* background */
+--default-primary-color : #3F51B5; /* background */
+--light-primary-color : #C5CAE9; /* background */
+--text-primary-color : #FFFFFF; /* text */
+--accent-color : #448AFF; /* background */
+--primary-text-color : #212121; /* text */
+--secondary-text-color : #757575; /* text */
+--divider-color : #BDBDBD; /* border */
 }
+
+/* Universal selector */
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+  }
+  
+  /* Element selectors */
+  body {
+    background-color: var(--default-primary-color );
+  }
+
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: var(--dark-primary-color );
+    color: var(--text-primary-color)
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    background-color: var(--accent-color);    
+    display: table-cell;
+}
+
+ li a {
+    color: var(--light-primary-color);    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    color: var(--ivory);
+  }
+
+
+  
 
