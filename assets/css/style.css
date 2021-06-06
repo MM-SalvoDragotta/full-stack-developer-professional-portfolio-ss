@@ -1,6 +1,6 @@
-/* Variables */
+/* Variables
+ ========================================================================== */
 :root{
-
  /* CSS HEX */
 --dark-primary-color : #303F9F; /* background */
 --default-primary-color : #3F51B5; /* background */
@@ -12,22 +12,28 @@
 --divider-color : #BDBDBD; /* border */
 }
 
-/* Universal selector */
+/* Universal selector
+ ========================================================================== */
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
-  }
-  
-  /* Element selectors */
-  body {
-    background-color: var(--default-primary-color );
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; 
+    /*box-sizing: border-box;  */ 
   }
 
+/* Element selectors
+ ========================================================================== */  
+
 body {
-    font-size: 16px;
+    background-color: var(--default-primary-color );
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+
+}
+
+p {
+  font-size: 14px;
 }
 
 header {
@@ -39,18 +45,23 @@ header {
     color: var(--text-primary-color)
 }
 
-header h1 {
+header h1 ,section h1 {
     font-size: 2rem;
     margin-bottom: 5px;
-    background-color: var(--accent-color);    
-    display: table-cell;
+    background-color: var(--accent-color);  
+    text-align: right;  
+    
 }
 
- li a {
+li a {
     color: var(--light-primary-color);
     text-decoration: none;
     border-bottom: var(--text-primary-color) 0.2em solid ;
 }
+
+/* ========================================================================
+   Component: Nav
+ ========================================================================== */
 
 nav ul {
     display: flex;
@@ -60,11 +71,108 @@ nav ul {
     font-weight: bold;
   }
 
- li a:hover {
+  nav ul li a:hover {   
     text-decoration:none;
-    /*border-bottom: 4px solid var(--text-primary-color);*/
     background : var(--secondary-text-color);
  }
+
+ /* ========================================================================
+   Component: Main image
+ ========================================================================== */
+ .main-img {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/1909504201-vector-resized.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+ /* ========================================================================
+   Component: Main Sections
+ ========================================================================== */
+.about-me{
+  display: flex;
+  /* Align the child elements to the top of the parent */
+  align-items: flex-start;
+  width: 90%;
+  margin: 1% auto;
+}
+.column-2-left {
+  float: left;
+  width: 30%;
+  /*padding: 40px;*/
+  padding-left:30px;
+  padding-right: 30px;
+  height: 475px;
+  margin:30px;
+  margin-right:30px;
+  margin-bottom: 70px;
+  /*background-color: var(--light-primary-color);*/    
+  border-right: solid;
+  border-color: var(--divider-color);
+  border-width: 5pt; 
+ }
+
+ .column-2-about-me {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  margin-top: 20px;    
+  height: 475px;
+  line-height: 1.5;
+}
+.column-2-right {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  padding-left:30px;
+  padding-right: 30px;
+  height: 475px;
+  margin:30px;
+  margin-right:30px;
+  margin-bottom: 70px;
+  border-style: outset;
+}
+
+.large-profile {
+  background: url('../images/Salvo\ Dragotta.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+/* ========================================================================
+   Component: Media Query Responsive Design
+ ========================================================================== */
+ @media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: device-width; } }
+
+/*Responsive design going from narrow --> wide*/
+@media screen and (min-width : 768px){
+/* on a Tablet set column to be 50% of the width and not grow */
+  .about-me {
+    flex : 0 0 50%;
+   /* max-width: 50%;*/
+   }
+ 
+  /* Select the last child to grow to full width if it has spacec to grow */  
+  .about-me:last-child{
+    flex-grow: 1;
+  }
+}
+/*Media query for larger screens */
+ @media screen and (max-width: 992px) {
+    header {
+      width: 75%;
+    }
+    .about-me{
+      flex : 0 0 33.333%;
+    }    
+    
+    
+  }
 
 
 
