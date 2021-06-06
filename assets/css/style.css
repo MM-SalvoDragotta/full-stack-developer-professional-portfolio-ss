@@ -47,16 +47,24 @@ header h1 {
 }
 
  li a {
-    color: var(--light-primary-color);    
+    color: var(--light-primary-color);
+    text-decoration: none;
+    border-bottom: var(--text-primary-color) 0.2em solid ;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 400px;
+    min-width: 350px;
     color: var(--ivory);
+    font-weight: bold;
   }
 
+ li a:hover {
+    text-decoration:none;
+    /*border-bottom: 4px solid var(--text-primary-color);*/
+    background : var(--secondary-text-color);
+ }
 
-  
+
 
