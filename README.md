@@ -8,7 +8,7 @@ You can view my portfolio at [Salvo Dragotta - Full Stack Developer Professional
 
 The following image shows the web application's appearance and functionality:
 
-![Salvo Dragotta - Full Stack Developer Professional Portfolio .](./assets\images\full-stack-developer-professional-portfolio.png)
+![Salvo Dragotta - Full Stack Developer Professional Portfolio .](./assets/images/full-stack-developer-professional-portfolio.png)
 
 ## Education
 
