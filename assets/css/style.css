@@ -17,6 +17,11 @@
 * {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; 
     /*box-sizing: border-box;  */ 
+    text-decoration:none;
+    list-style:none; 
+    margin:0px; 
+    padding:0px; 
+    outline:none;
   }
 
 /* Element selectors
@@ -90,11 +95,20 @@ nav ul {
  /* ========================================================================
    Component: Main image
  ========================================================================== */
- .main-img {
-  height: 700px;
+ /* .main-img {  
+  display: block;
+  height: 300px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url("../images/1909504201-vector-resized.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.main-img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
   background-size: cover;
   background-position: center;
 }
