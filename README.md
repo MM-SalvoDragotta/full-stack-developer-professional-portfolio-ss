@@ -25,7 +25,7 @@ the University of Sydney and Trilogy Education Services (Australia) Pty Ltd
 
 ### Project 2
 
-## Techinical Skill Stack
+## Technical Skill Stack
 
 ### Front End
 
