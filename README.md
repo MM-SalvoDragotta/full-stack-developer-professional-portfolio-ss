@@ -2,7 +2,7 @@
 
 I am a Full-Stack Web Developer currently located in Sydney. This is my personal portfolio website that showcases my experience, education, recent projects, technical skill stack, contact information.
 
-You can view my portfolio at [Salvo Dragotta - Full Stack Developer Professional Portfolio](https://mm-salvodragotta.github.io/full-stack-developer-professional-portfolio/).
+You can view my portfolio at [Salvo Dragotta - Full Stack Developer Professional Portfolio](https://mm-salvodragotta.github.io/full-stack-developer-professional-portfolio-ss/).
 
 ## Mock-Up
 
