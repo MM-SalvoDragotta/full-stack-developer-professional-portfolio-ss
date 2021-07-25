@@ -41,5 +41,5 @@ the University of Sydney and Trilogy Education Services (Australia) Pty Ltd
 
 ### Tools & Deployment
 
- `Git` `Github` `NPM` `Heroku`
+ `Git` `Github` `NPM` `Heroku`  
 
